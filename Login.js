@@ -15,7 +15,8 @@ const { chromium } = require('playwright');
 
   console.log('Login completed');
 
-  // Keep browser open until you press Enter
+  // Keep browser open until you press Enter.
+  // Made change by Jethanand
   await new Promise(resolve => {
     process.stdin.once('data', resolve);
   });
