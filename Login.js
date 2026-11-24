@@ -4,7 +4,7 @@ const { chromium } = require('playwright');
   const browser = await chromium.launch({ headless: false });
   const page = await browser.newPage();
 
-  await page.goto('https://www.saucedemo.com/?utm_source=chatgpt.com');
+  await page.goto('https://www.saucedemo.com');
 
   await page.locator('#user-name').fill('standard_user');
   await page.locator('#password').fill('secret_sauce');
